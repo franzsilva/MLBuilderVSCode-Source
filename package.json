@@ -4,12 +4,20 @@
 	"description": "ML.NET Model Builder for VSCode",
 	"publisher": "franzssilva",
 	"repository": "https://github.com/franzsilva/MLBuilderVSCode-Source",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"engines": {
 		"vscode": "^1.39.0"
 	},
 	"categories": [
-		"Other"
+		"Programming Languages"
+	],
+	"keywords": [
+		"AutoML",
+		"ML.NET",
+		"ASP.NET",
+		".NET Core",
+		"dotnet",
+		"Model Builder"
 	],
 	"activationEvents": [
 		"onCommand:extension.mlbuilder"
