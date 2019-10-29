@@ -32,6 +32,13 @@ As Features are added to the ML.NET CLI, i'm planning on adding them as needed t
 - .NET Core
 - Install the ML.NET Cli (dotnet tool install -g mlnet)
 
+
+## How to use
+
+- Launch the command pallete
+- Run command ML.NET Model Builder (Preview)
+- Follow the series of questions
+
 ## Known Issues
 
 Currently releasing the product for testing. Please create Github Issues to work on any issues you find!.

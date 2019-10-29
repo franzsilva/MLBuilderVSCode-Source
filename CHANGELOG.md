@@ -5,3 +5,5 @@
 
 ## 0.0.2 (October 29, 2019)
 * Adding VSCode Categories and Keywords
+## 0.0.3 (October 29, 2019)
+* Adding a how to use section in readme
