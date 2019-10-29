@@ -1,7 +1,8 @@
 {
 	"name": "ml-net-model-builder",
 	"displayName": "ML.NET Model Builder (Preview)",
-	"description": "ML.NET Model Builder for VSCODE",
+	"description": "ML.NET Model Builder for VSCode",
+	"publisher": "franzssilva",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.39.0"

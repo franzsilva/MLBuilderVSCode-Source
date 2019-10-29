@@ -42,7 +42,7 @@ export function activate(context: vscode.ExtensionContext) {
 		let selectIgnoredColumns: any;
 		let ignoredColumns: string = "";
 
-		let _channel = vscode.window.createOutputChannel('ML.NET Auto-Train');
+		let _channel = vscode.window.createOutputChannel('ML.NET AutoML');
 		let task = await vscode.window.showQuickPick(autoMLTypes.map(item =>{
 			return item.name;
 		}), {
@@ -52,7 +52,7 @@ export function activate(context: vscode.ExtensionContext) {
 			return;
 		}
 
-		const getFile = await vscode.window.showOpenDialog({canSelectFiles: false, filters: {'CSV or TSV': ['csv', 'tsv']}});
+		const getFile = await vscode.window.showOpenDialog({openLabel: "select DataSet",canSelectFiles: false, filters: {'CSV or TSV': ['csv', 'tsv']}});
 		
 		if (!getFile) {
 			return;
@@ -74,6 +74,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 		const useHeaders = await vscode.window.showQuickPick(['Yes', 'No'], {
 			placeHolder: 'File contains a header row?',
+
 		});
 
 		console.log("useHeaders:",useHeaders);
@@ -89,7 +90,7 @@ export function activate(context: vscode.ExtensionContext) {
 			selectIgnoredColumns = await vscode.window.showQuickPick(headers.filter((item)=>{
 				return item !== pickHeader;
 			}), {
-				placeHolder: 'Pick Label Column:',
+				placeHolder: 'Select columns to Ignore from the Dataset:',
 				canPickMany: true
 			});
 
@@ -130,7 +131,7 @@ export function activate(context: vscode.ExtensionContext) {
 			return;
 		}
 
-		const outputFolder = await vscode.window.showOpenDialog({canSelectFolders: true});
+		const outputFolder = await vscode.window.showOpenDialog({canSelectFolders: true, openLabel: "Output Here"});
 
 		if(!outputFolder){
 			return;
@@ -153,7 +154,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 
 		// Display a message box to the user
-		vscode.window.showInformationMessage('Running ML.NET Auto-Train!');
+		vscode.window.showInformationMessage('Running ML.NET AutoML!');
 	});
 
 	context.subscriptions.push(disposable);
