@@ -20,9 +20,11 @@ As Features are added to the ML.NET CLI, i'm planning on adding them as needed t
 
 ## Planned Features
 
+- Stream results to the Output Console. (Currently it stays blank until the command finishes)
 - Selecting Validation and Test Datasets
 - Create configuration to turn off and on Cache
 - Create configuration to turn off and on Verbosity
+- Refactor code to be more clean and DRY
 
 
 ## Requirements
@@ -33,6 +35,8 @@ As Features are added to the ML.NET CLI, i'm planning on adding them as needed t
 ## Known Issues
 
 Currently releasing the product for testing. Please create Github Issues to work on any issues you find!.
+
+I have a Mac and im pretty sure this would work on Linux. Windows Users if possible please test to see if there are any issues running the tool. 
 
 
 -----------------------------------------------------------------------------------------------------------
