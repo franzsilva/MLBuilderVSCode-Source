@@ -1,9 +1,4 @@
 # Change Log
 
-All notable changes to the "ml-net-model-builder" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
-
-- Initial release
+## 0.0.1 (October 29, 2019)
+* Initial release of ML.NET Model Builder (Preview)

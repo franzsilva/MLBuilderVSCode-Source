@@ -3,6 +3,7 @@
 	"displayName": "ML.NET Model Builder (Preview)",
 	"description": "ML.NET Model Builder for VSCode",
 	"publisher": "franzssilva",
+	"repository": "https://github.com/franzsilva/MLBuilderVSCode-Source",
 	"version": "0.0.1",
 	"engines": {
 		"vscode": "^1.39.0"
