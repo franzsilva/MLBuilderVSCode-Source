@@ -1,5 +1,3 @@
-// The module 'vscode' contains the VS Code extensibility API
-// Import the module and reference it with the alias vscode in your code below
 import * as vscode from 'vscode';
 var fs = require('fs');
 var firstline = require("firstline");
@@ -116,7 +114,7 @@ export function activate(context: vscode.ExtensionContext) {
 		const pickExplorationTime = await vscode.window.showInputBox(
 			{ 	placeHolder: '10', 
 				prompt: "Max exploration Time? in Seconds..",
-				validateInput: text => {
+				validateInput: (text: string) => {
 					if(isNaN(parseInt(text))){
 						return 'Needs to be a Number';
 					}
