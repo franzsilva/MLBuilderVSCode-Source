@@ -113,7 +113,7 @@ export function activate(context: vscode.ExtensionContext) {
 	
 		const pickExplorationTime = await vscode.window.showInputBox(
 			{ 	placeHolder: '10', 
-				prompt: "Max exploration Time? in Seconds..",
+				prompt: "Train Time? in Seconds..",
 				validateInput: (text: string) => {
 					if(isNaN(parseInt(text))){
 						return 'Needs to be a Number';
