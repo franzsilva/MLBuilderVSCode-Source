@@ -11,21 +11,17 @@ As Features are added to the ML.NET CLI, i'm planning on adding them as needed t
 
 ## Current Features
 
-- Picking the Scenario to use. Currently (binary-classification, multiclass-classification, regression)
+- Picking the Scenario to use. Currently (classification, regression)
 - Selecting the DataSet File (TSV or CSV)
 - Selecting the Predict (Label)
 - Ignoring Columns from your dataset
 - Selecting the output location of the Model
-- Choosing the Max Exploration Time.
+- Choosing the Train Time.
+- Working in Github CodeSpaces
 
 ## Planned Features
 
-- Stream results to the Output Console. (Currently it stays blank until the command finishes)
-- Selecting Validation and Test Datasets
-- Create configuration to turn off and on Cache
-- Create configuration to turn off and on Verbosity
-- Refactor code to be more clean and DRY
-
+For planned features you can visit the Project board to see whats coming to the Extension, [Project Board]: https://github.com/franzsilva/MLBuilderVSCode-Source/projects
 
 ## Requirements
 
@@ -41,9 +37,7 @@ As Features are added to the ML.NET CLI, i'm planning on adding them as needed t
 
 ## Known Issues
 
-Currently releasing the product for testing. Please create Github Issues to work on any issues you find!.
-
-I have a Mac and im pretty sure this would work on Linux. Windows Users if possible please test to see if there are any issues running the tool. 
+Currently in Testing. Please create Github Issues to work on any issues you find!. 
 
 
 -----------------------------------------------------------------------------------------------------------

@@ -1,0 +1,15 @@
+const commandArrayArgs = [
+			"auto-train",
+			`--task ${task2Run.value}`,
+			"--label-column-index",
+			labelColumnIndex,
+			ignoredColumns,
+			"--has-header",
+			`${useHeaders  === 'Yes'}`,
+			"--dataset",
+			`"${filePath}"`,
+			"--max-exploration-time",
+			pickExplorationTime,
+			"--output-path",
+			outputPath
+		];
