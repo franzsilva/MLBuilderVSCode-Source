@@ -15,3 +15,6 @@
 * Streaming output to console (Before it would be blank until it finished)
 * Fixing labeling to match cli commands
 * Added Project Board with roadmap of features
+
+## 0.1.1 (October 16, 2020)
+* Adding a how to use section in readme

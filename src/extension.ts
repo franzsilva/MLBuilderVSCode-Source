@@ -53,6 +53,7 @@ export function activate(context: vscode.ExtensionContext) {
 				break;
 			case "csv":
 				headers = firstLineDoc.split(",");
+				break;
 			default:
 				return;
 		}
